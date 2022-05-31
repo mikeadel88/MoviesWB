@@ -1,0 +1,57 @@
+<app-header [trendingM]="trendingMovie"></app-header>
+<div class="container">
+    <div class="row my-5">
+        <div class="col-md-4">
+            <div class="topborder my-5 w-25"></div>
+            <h2>Trending Movies <br>To Watch right Now</h2>
+            <div class="topborder my-5 "></div>
+        </div>
+        <div class="col-md-2 position-relative"  *ngFor='let movie of trendingMovie'>
+            <div class="movie text-center ">
+                <a [routerLink] ="['/movieDetails',movie.id]">
+                    <img [src]="imagePrfix + movie.poster_path" class="w-100" alt="">
+                <h2 class="h5 mt-2">{{movie.title}} </h2>
+                <div class="vote position-absolute end-0 top-0">
+                    {{movie.vote_average}}
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="topborder my-5 w-25"></div>
+            <h2>Trending TV <br>To Watch right Now</h2>
+            <div class="topborder my-5 "></div>
+        </div>
+        <div class="col-md-2 position-relative"  *ngFor='let movie of trendingTv'>
+            <a [routerLink] ="['/tvDetails',movie.id]">
+                <div class="movie text-center">
+                <img [src]="imagePrfix + movie.poster_path" class="w-100" alt="">
+                <h2 class="h5 mt-2">{{movie.name}} </h2>
+                <div class="vote position-absolute end-0 top-0">
+                    {{movie.vote_average}}
+                </div>
+            </div>
+        </a>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="topborder my-5 w-25"></div>
+            <h2>Trending Person <br>To Watch right Now</h2>
+            <div class="topborder my-5 "></div>
+        </div>
+        <div class="col-md-2 position-relative"  *ngFor='let movie of trendingPeople'>
+            <a [routerLink] ="['/personDetails',movie.id]">
+                <div class="movie text-center">
+                <img [src]="imagePrfix + movie.profile_path" class="w-100" alt="">
+                <h2 class="h5 mt-2">{{movie.name}} </h2>
+            
+            </div>
+        </a>
+
+        </div>
+    </div>
+</div>

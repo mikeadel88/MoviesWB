@@ -1,0 +1,45 @@
+<form [formGroup]="profileForm" class="w-50 m-auto my-5"(ngSubmit)="onSubmit(profileForm)">
+    <div class="form-group mb-3">
+        <label for="first_name">First Name</label>
+        <input type="text" formControlName="first_name" id="first_name" class="form-control">
+         <div class="alert alert-danger mt-3 p-2" *ngIf="profileForm.controls['first_name'].errors != null && profileForm.controls['first_name'].touched">
+             <p *ngIf="profileForm.controls['first_name'].errors.required">First Name is Required</p>
+             <p *ngIf="profileForm.controls['first_name'].errors.minlength" >First Name Min char is 3</p>
+             <p *ngIf="profileForm.controls['first_name'].errors.maxlength">First Name Max char is 10</p>
+         </div>
+    </div>
+    <div class="form-group mb-3">
+        <label for="last_name">Last Name</label>
+        <input type="text" formControlName="last_name" id="last_name" class="form-control">
+        <div class="alert alert-danger mt-3 p-2" *ngIf="profileForm.controls['last_name'].errors != null && profileForm.controls['last_name'].touched">
+            <p *ngIf="profileForm.controls['last_name'].errors.required">Last Name is Required</p>
+            <p *ngIf="profileForm.controls['last_name'].errors.minlength" >Last Name Min char is 3</p>
+            <p *ngIf="profileForm.controls['last_name'].errors.maxlength">Last Name Max char is 10</p>
+        </div>
+    </div>
+    <div class="form-group mb-3">
+        <label for="password">Password</label>
+        <input type="password" formControlName="password" id="password" class="form-control">
+        <div class="alert alert-danger mt-3 p-2" *ngIf="profileForm.controls['password'].errors != null && profileForm.controls['password'].touched">
+            <p *ngIf="profileForm.controls['password'].errors.required">password is Required</p>
+        </div>
+    </div>
+    <div class="form-group mb-3">
+        <label for="email">Email</label>
+        <input type="email" formControlName="email" id="email" class="form-control">
+        <div class="alert alert-danger mt-3 p-2" *ngIf="profileForm.controls['email'].errors != null && profileForm.controls['email'].touched">
+            <p *ngIf="profileForm.controls['email'].errors.email">Email is not correct</p>
+        </div>
+    </div>
+    <div class="form-group mb-3">
+        <label for="age">Age</label>
+        <input type="number" formControlName="age" id="age" class="form-control">
+        <div class="alert alert-danger mt-3 p-2" *ngIf="profileForm.controls['age'].errors != null && profileForm.controls['age'].touched">
+            <p *ngIf="profileForm.controls['age'].errors.required">age is Required</p>
+            <p *ngIf="profileForm.controls['age'].errors.min" > Min  is 18</p>
+            <p *ngIf="profileForm.controls['age'].errors.max">Max Max char is 80</p>
+        </div>
+    </div>
+    <button [disabled]="profileForm.invalid" type="submit" class="btn btn-danger"> Submit</button>
+</form>
+<h2>{{errors}} </h2>

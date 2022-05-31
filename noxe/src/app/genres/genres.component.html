@@ -1,0 +1,7 @@
+<div class="container mt-5">
+    <div class="row">
+        <div *ngFor="let gener of geners" class="col-md-2">
+            <a [routerLink]="'/movies/genres/'+ gener.id">{{gener.name}}</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row py-5 my-5">
+    <div class="col-md-3">
+      <img
+        [src]="imagePrfix + personDetials.profile_path"
+        class="w-100"
+        alt=""
+      />
+    </div>
+    <div class="col-md-9 m-0">
+      <h2>{{ personDetials.name }}</h2>
+      <div class="d-flex">
+        <p class="h5">{{ personDetials.place_of_birth }}</p>
+        <p class="h5">{{ personDetials.vote_average }}</p>
+      </div>
+      <p class="h5">{{ personDetials.biography }}</p>
+    </div>
+  </div>
+</div>

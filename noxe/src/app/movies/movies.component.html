@@ -1,0 +1,27 @@
+<div class="container my-5 py-5">
+  <div class="row">
+    <div class="col-12 py-3 ">
+      <div class="container-fluid w-100">
+        <span class="p-input-icon-left">
+          <i class="pi pi-search"></i>
+          <input type="text" pInputText placeholder="Search " [(ngModel)]="searchValue"  (keyup)=changeSearch()/>
+      </span>
+      </div>
+     
+    </div>
+    <div class="col-md-3 position-relative" *ngFor="let movie of movies">
+      <div class="text-center">
+        <a [routerLink]="['/movieDetails', movie.id]">
+          <img [src]="imagePrfix + movie.poster_path" class="" alt="" />
+          <h2 class="h5 mt-2">{{ movie.title }}</h2>
+          <div class="vote position-absolute end-0 top-0">
+            {{ movie.vote_average }}
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div>
+    <p-paginator [rows]="20" [totalRecords]="10000" (onPageChange)="paginate($event)"></p-paginator>
+  </div>
+</div>

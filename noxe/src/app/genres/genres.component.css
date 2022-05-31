@@ -1,0 +1,10 @@
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:  0.5rem; ;
+    height: 50px;
+    background-color: chartreuse;
+    margin-bottom: .5rem;
+    color: #333;
+}

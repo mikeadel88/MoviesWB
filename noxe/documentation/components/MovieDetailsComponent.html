@@ -1,0 +1,824 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>noxe documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">noxe documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  MovieDetailsComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/movie-details/movie-details.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-movie-details</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./movie-details.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./movie-details.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#customOptions" >customOptions</a>
+                            </li>
+                            <li>
+                                <a href="#getsimilar" >getsimilar</a>
+                            </li>
+                            <li>
+                                <a href="#id" >id</a>
+                            </li>
+                            <li>
+                                <a href="#imagePrfix" >imagePrfix</a>
+                            </li>
+                            <li>
+                                <a href="#moviescredits" >moviescredits</a>
+                            </li>
+                            <li>
+                                <a href="#moviesDetials" >moviesDetials</a>
+                            </li>
+                            <li>
+                                <a href="#moviesimage" >moviesimage</a>
+                            </li>
+                            <li>
+                                <a href="#moviesVideo" >moviesVideo</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(_activated: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, _movie: <a href="../injectables/MovieDataService.html" target="_self">MovieDataService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/movie-details/movie-details.component.ts:19</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>_activated</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_movie</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/MovieDataService.html" target="_self" >MovieDataService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="48"
+                            class="link-to-prism">src/app/movie-details/movie-details.component.ts:48</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="customOptions"></a>
+                    <span class="name">
+                        <span ><b>customOptions</b></span>
+                        <a href="#customOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>OwlOptions</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    loop: true,
+    mouseDrag: true,
+    touchDrag: false,
+    pullDrag: false,
+    dots: false,
+    navSpeed: 700,
+    navText: [&#x27;&#x27;, &#x27;&#x27;],
+    responsive: {
+      0: {
+        items: 1
+      },
+      400: {
+        items: 2
+      },
+      740: {
+        items: 6
+      },
+      940: {
+        items: 8
+      }
+    },
+    nav: true
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/movie-details/movie-details.component.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getsimilar"></a>
+                    <span class="name">
+                        <span ><b>getsimilar</b></span>
+                        <a href="#getsimilar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/movie-details/movie-details.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="id"></a>
+                    <span class="name">
+                        <span ><b>id</b></span>
+                        <a href="#id"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/movie-details/movie-details.component.ts:13</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="imagePrfix"></a>
+                    <span class="name">
+                        <span ><b>imagePrfix</b></span>
+                        <a href="#imagePrfix"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&quot;https://image.tmdb.org/t/p/w500/&quot;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/movie-details/movie-details.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="moviescredits"></a>
+                    <span class="name">
+                        <span ><b>moviescredits</b></span>
+                        <a href="#moviescredits"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/movie-details/movie-details.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="moviesDetials"></a>
+                    <span class="name">
+                        <span ><b>moviesDetials</b></span>
+                        <a href="#moviesDetials"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/movie-details/movie-details.component.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="moviesimage"></a>
+                    <span class="name">
+                        <span ><b>moviesimage</b></span>
+                        <a href="#moviesimage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/Image.html" target="_self" >Image | null</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>null</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/movie-details/movie-details.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="moviesVideo"></a>
+                    <span class="name">
+                        <span ><b>moviesVideo</b></span>
+                        <a href="#moviesVideo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/movie-details/movie-details.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { ActivatedRoute } from &#x27;@angular/router&#x27;;
+import { Image, Movie } from &#x27;../model/movie&#x27;;
+import { MovieDataService } from &#x27;../movie-data.service&#x27;;
+import { OwlOptions } from &#x27;ngx-owl-carousel-o&#x27;;
+
+@Component({
+  selector: &#x27;app-movie-details&#x27;,
+  templateUrl: &#x27;./movie-details.component.html&#x27;,
+  styleUrls: [&#x27;./movie-details.component.css&#x27;]
+})
+export class MovieDetailsComponent implements OnInit {
+  id:string&#x3D;&#x27;&#x27;;
+  moviesDetials:any&#x3D; [];
+  moviesVideo:any&#x3D;[];
+  moviesimage:Image|null&#x3D;null;
+  moviescredits:any&#x3D;[]
+  getsimilar:any&#x3D;[]
+  imagePrfix:string&#x3D;&quot;https://image.tmdb.org/t/p/w500/&quot;;
+  
+
+  constructor(private _activated:ActivatedRoute,private _movie:MovieDataService) { 
+  }
+  customOptions: OwlOptions &#x3D; {
+    loop: true,
+    mouseDrag: true,
+    touchDrag: false,
+    pullDrag: false,
+    dots: false,
+    navSpeed: 700,
+    navText: [&#x27;&#x27;, &#x27;&#x27;],
+    responsive: {
+      0: {
+        items: 1
+      },
+      400: {
+        items: 2
+      },
+      740: {
+        items: 6
+      },
+      940: {
+        items: 8
+      }
+    },
+    nav: true
+  }
+  ngOnInit(): void {
+    this.id&#x3D; this._activated.snapshot.params.id;
+    this._movie.getdetials(&quot;movie&quot;,this.id).subscribe((resopens)&#x3D;&gt;{
+      this.moviesDetials&#x3D;resopens;
+    })
+    this._movie.getvideos(&quot;movie&quot;,this.id).subscribe((resopens)&#x3D;&gt;{
+      this.moviesVideo&#x3D;resopens.results
+    })
+    this._movie.getimage(this.id).subscribe((resopens)&#x3D;&gt;{
+      this.moviesimage&#x3D;resopens.results
+      console.log(this.moviesimage)
+    })
+    this._movie.getcredits(this.id).subscribe((resopens)&#x3D;&gt;{
+      this.moviescredits&#x3D;resopens
+    })
+    this._movie.getsimilar(this.id).subscribe((resopens)&#x3D;&gt;{
+      this.getsimilar&#x3D;resopens
+    })
+   
+  }
+
+  
+  
+}
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;container py-5 my-5&quot;&gt;
+            &lt;p-tabView class&#x3D;&quot;py-5&quot;&gt;
+                &lt;p-tabPanel header&#x3D;&quot;overviwe &quot; [selected]&#x3D;&quot;true&quot;&gt;
+                    &lt;div class&#x3D;&quot;row&quot;&gt;
+                        &lt;div class&#x3D;&quot;col-md-3&quot;&gt;
+                            &lt;img [src]&#x3D;&quot;imagePrfix+moviesDetials.poster_path&quot; class&#x3D;&quot;w-100&quot; alt&#x3D;&quot;&quot;&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;col-md-9 m-0&quot;&gt;
+                            &lt;h2&gt;{{moviesDetials.title}} &lt;/h2&gt;
+                            &lt;div class&#x3D;&quot; d-flex&quot;&gt;
+                                &lt;p class&#x3D;&quot;h6 &quot;&gt; lang: {{moviesDetials.original_language | uppercase}} &lt;/p&gt;
+                                &lt;p class&#x3D;&quot;h6 ms-2&quot;&gt; Rate : {{moviesDetials.vote_average}} /10 &lt;/p&gt;
+                                &lt;p class&#x3D;&quot;h6 ms-2&quot;&gt; Release Date: {{moviesDetials.release_date | date:&quot;yyyy&quot;}} &lt;/p&gt;
+                
+                            &lt;/div&gt;
+                            &lt;p class&#x3D;&quot;h5 lead&quot;&gt;{{moviesDetials.overview}}&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/p-tabPanel&gt;
+                &lt;p-tabPanel header&#x3D;&quot;video&quot; &gt;
+                    &lt;ng-container &gt;
+                        &lt;div class&#x3D;&quot;col-md-4&quot; *ngFor&#x3D;&quot;let videos of moviesVideo&quot;&gt;
+                        &lt;app-embed-video [key]&#x3D;&quot;videos.key&quot; [site]&#x3D;&quot;videos.site&quot;&gt;&lt;/app-embed-video&gt;
+                        &lt;/div&gt;   
+                    &lt;/ng-container&gt;
+                     
+                &lt;/p-tabPanel&gt;
+                &lt;p-tabPanel header&#x3D;&quot;Photo&quot;&gt;
+                    &lt;ng-container &gt;
+                        &lt;div class&#x3D;&quot;col-md-4&quot; *ngFor&#x3D;&quot;let movieimage of moviesimage?.backdrops&quot;&gt;
+                            &lt;p-image [src]&#x3D;&quot;imagePrfix + movieimage.file_path&quot; alt&#x3D;&quot;Image&quot; width&#x3D;&quot;100%&quot; [preview]&#x3D;&quot;true&quot;&gt;&lt;/p-image&gt;
+                        &lt;/div&gt;   
+                    &lt;/ng-container&gt;
+                &lt;/p-tabPanel&gt;
+            &lt;/p-tabView&gt;
+        
+            &lt;owl-carousel-o [options]&#x3D;&quot;customOptions&quot; class&#x3D;&quot;mt-3&quot;&gt;
+
+                &lt;ng-container *ngFor&#x3D;&quot;let actor of moviescredits.cast&quot;&gt;
+                  &lt;ng-template carouselSlide [id]&#x3D;&quot;actor.id&quot;&gt;
+                    &lt;img [src]&#x3D;&quot;imagePrfix+actor.profile_path&quot; width&#x3D;&quot;100%&quot; class&#x3D;&quot;p-3&quot;&gt;
+                    &lt;p class&#x3D;&quot;text-center&quot;&gt;{{actor.name}}&lt;/p&gt;
+                  &lt;/ng-template&gt;
+                &lt;/ng-container&gt;
+            
+              &lt;/owl-carousel-o&gt;
+              &lt;ng-container class&#x3D;&quot;mt-3&quot; &gt;
+                  &lt;h2&gt;Similar Movies&lt;/h2&gt;
+                  &lt;div class&#x3D;&quot;row&quot;&gt;
+                    &lt;div class&#x3D;&quot;col-md-3&quot;*ngFor&#x3D;&quot;let movie of getsimilar.results&quot;&gt;
+                        &lt;img [src]&#x3D;&quot;imagePrfix+movie.poster_path&quot; alt&#x3D;&quot;&quot; width&#x3D;&quot;100%&quot;&gt;
+                        &lt;p class&#x3D;&quot;text-center&quot;&gt;{{movie.original_title}} &lt;/p&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt; 
+              &lt;/ng-container&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./movie-details.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="container py-5 my-5">            <p-tabView class="py-5">                <p-tabPanel header="overviwe " [selected]="true">                    <div class="row">                        <div class="col-md-3">                            <img [src]="imagePrfix+moviesDetials.poster_path" class="w-100" alt="">                        </div>                        <div class="col-md-9 m-0">                            <h2>{{moviesDetials.title}} </h2>                            <div class=" d-flex">                                <p class="h6 "> lang: {{moviesDetials.original_language | uppercase}} </p>                                <p class="h6 ms-2"> Rate : {{moviesDetials.vote_average}} /10 </p>                                <p class="h6 ms-2"> Release Date: {{moviesDetials.release_date | date:"yyyy"}} </p>                                            </div>                            <p class="h5 lead">{{moviesDetials.overview}}</p>                    </div>                    </div>                </p-tabPanel>                <p-tabPanel header="video" >                    <ng-container >                        <div class="col-md-4" *ngFor="let videos of moviesVideo">                        <app-embed-video [key]="videos.key" [site]="videos.site"></app-embed-video>                        </div>                       </ng-container>                                     </p-tabPanel>                <p-tabPanel header="Photo">                    <ng-container >                        <div class="col-md-4" *ngFor="let movieimage of moviesimage?.backdrops">                            <p-image [src]="imagePrfix + movieimage.file_path" alt="Image" width="100%" [preview]="true"></p-image>                        </div>                       </ng-container>                </p-tabPanel>            </p-tabView>                    <owl-carousel-o [options]="customOptions" class="mt-3">                <ng-container *ngFor="let actor of moviescredits.cast">                  <ng-template carouselSlide [id]="actor.id">                    <img [src]="imagePrfix+actor.profile_path" width="100%" class="p-3">                    <p class="text-center">{{actor.name}}</p>                  </ng-template>                </ng-container>                          </owl-carousel-o>              <ng-container class="mt-3" >                  <h2>Similar Movies</h2>                  <div class="row">                    <div class="col-md-3"*ngFor="let movie of getsimilar.results">                        <img [src]="imagePrfix+movie.poster_path" alt="" width="100%">                        <p class="text-center">{{movie.original_title}} </p>                    </div>                  </div>               </ng-container></div></div>'
+    var COMPONENTS = [{'name': 'AboutComponent', 'selector': 'app-about'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'EmbedVideoComponent', 'selector': 'app-embed-video'},{'name': 'GenresComponent', 'selector': 'app-genres'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MovieDetailsComponent', 'selector': 'app-movie-details'},{'name': 'MoviesComponent', 'selector': 'app-movies'},{'name': 'NavBarComponent', 'selector': 'app-nav-bar'},{'name': 'NotfoundComponent', 'selector': 'app-notfound'},{'name': 'PasswordComponent', 'selector': 'app-password'},{'name': 'PersondetialisComponent', 'selector': 'app-persondetialis'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'TvDetailsComponent', 'selector': 'app-tv-details'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'MovieDetailsComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'MovieDetailsComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

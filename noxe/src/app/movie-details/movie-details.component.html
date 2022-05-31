@@ -1,0 +1,60 @@
+<div class="container py-5 my-5">
+            <p-tabView class="py-5">
+                <p-tabPanel header="overviwe " [selected]="true">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img [src]="imagePrfix+moviesDetials.poster_path" class="w-100" alt="">
+                        </div>
+                        <div class="col-md-9 m-0">
+                            <h2>{{moviesDetials.title}} </h2>
+                            <div class=" d-flex">
+                                <p class="h6 "> lang: {{moviesDetials.original_language | uppercase}} </p>
+                                <p class="h6 ms-2"> Rate : {{moviesDetials.vote_average}} /10 </p>
+                                <p class="h6 ms-2"> Release Date: {{moviesDetials.release_date | date:"yyyy"}} </p>
+                
+                            </div>
+                            <p class="h5 lead">{{moviesDetials.overview}}</p>
+                    </div>
+                    </div>
+                </p-tabPanel>
+                <p-tabPanel header="video" >
+                    <div class="row">
+                        <div class="col-md-4" *ngFor="let videos of moviesVideo" >
+                        <app-embed-video [key]="videos.key" [site]="videos.site"></app-embed-video>
+                        </div>   
+                    </div>
+                     
+                </p-tabPanel>
+                <p-tabPanel header="Photo">
+                    <div class="row">
+                        <div class="col-md-4" *ngFor="let movieimage of moviesimage?.backdrops">
+                            <p-image [src]="imagePrfix + movieimage.file_path" alt="Image" width="100%" [preview]="true"></p-image>
+                        </div>   
+                    </div> 
+                </p-tabPanel>
+            </p-tabView>
+        
+            <owl-carousel-o [options]="customOptions" class="mt-3">
+
+                <ng-container *ngFor="let actor of moviescredits.cast">
+                  <ng-template carouselSlide [id]="actor.id">
+                    <img [src]="imagePrfix+actor.profile_path" width="100%" class="p-3">
+                    <p class="text-center">{{actor.name}}</p>
+                  </ng-template>
+                </ng-container>
+            
+              </owl-carousel-o>
+              <ng-container class="mt-3" >
+                  <h2>Similar Movies</h2>
+                    
+                        <div class="row">
+                        <div class="col-md-3"*ngFor="let movie of getsimilar.results">
+                            <a [routerLink]="['/movieDetails', movie.id]">
+                            <img [src]="imagePrfix+movie.poster_path" alt="" width="100%">
+                            <p class="text-center">{{movie.original_title}} </p>
+                            </a>
+                        </div>
+                    </div> 
+                  
+              </ng-container>
+</div>

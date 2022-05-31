@@ -1,0 +1,11 @@
+a{
+    cursor: pointer;
+}
+a:hover{
+    color: #f8f8f8;
+}
+
+
+@media screen and ( max-width: 900px ) {
+
+}

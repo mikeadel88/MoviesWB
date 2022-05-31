@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+
+body{
+    background-color: #131722;
+    color: #fff;
+    font-family: 'Manrope', sans-serif;
+}
+a{
+text-decoration: none;
+color: #fff;
+}
+.vote {
+    background-color: #24baaa;
+    padding: 5px;
+    font-weight: 900;
+    color: #fff;
+}
+.topborder{
+    height: 2px;
+    background-color:#333;
+}
